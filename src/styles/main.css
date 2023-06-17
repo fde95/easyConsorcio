@@ -1,0 +1,96 @@
+.navbar{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0,0.20 );
+}
+
+.hero{
+    padding: 5.6vw;
+    min-height: 80vh;
+    max-height: 622px;
+    background-image: url(../images/heroImage.png);
+    text-align: center;
+    background-size: cover;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.hero__text{
+    text-align: start;
+    margin-top: 232px;
+}
+
+.hero__text__title{
+    font-size: 42px;
+    color: #fff;
+    font-weight: bold;
+}
+.hero__text__desciption{
+    font-size: 37px;
+    color: #fff;
+}
+
+
+.servicos{
+    margin-top: 18px;
+}
+
+.cardProduto{
+    position: relative;
+    isolation: isolate;
+    width: 225px;
+    height: 119px;
+    background-color: #009197;
+    border-radius: 8px;
+}
+.cardProduto__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 20%;
+    border-radius: inherit;
+    transition: transform 250ms;
+}
+.cardProduto:hover .cardProduto__img{
+    transform: translateY(-75px) scale(.75);
+}
+.cardProduto__body{
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 15px;
+    color: #fff;
+}
+.cardProduto__title{
+    font-size: 14px;
+}
+.cardProduto__desciption{
+    font-size: 18px;
+    margin: 0;
+}
+.cardProduto__button{
+    display: inline-block;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fff;
+    font-weight: bold;
+    color: #009197;
+}
+
+.cardProduto__button:hover{
+    background-color: #C4C4C4;
+    color: #161616;
+}
+
+
+@media (max-width: 768px){
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1022px){
+
+}
