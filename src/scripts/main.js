@@ -1,3 +1,6 @@
 $(document).ready(function(){
-    console.log('Olá Mundo!')
+    AOS.init({
+        duration: 3000,
+        once: true,
+    });
 })

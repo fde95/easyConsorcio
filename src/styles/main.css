@@ -93,6 +93,25 @@
 }
 
 
+
+
+
+#aboutUs{
+    margin: 60px 0;
+}
+
+.sobre-nos__text__logo{
+    width: 400px;
+    text-align: start;
+}
+
+
+.sobre-nos__image{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
 @media (max-width: 768px){
     .hero{
         padding: 5.6vw;
@@ -122,6 +141,10 @@
     .cardProduto:hover .cardProduto__img{
         transform: none;
         opacity: 20%;
+    }
+
+    .sobre-nos__text__logo{
+        width: 350px;
     }
 
 }
