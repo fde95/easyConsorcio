@@ -105,11 +105,44 @@
 }
 .sobre-nos__text__description{
     text-align: justify;
+    padding-left: 8px;
+    margin-top: 24px;
 }
 .sobre-nos__image{
     width: 100%;
     border-radius: 10px;
 }
+
+
+.whatsapp__button{
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+.whatsapp__button__bg{
+    background-color: #c4c4c49f;
+    width: 65px;
+    height: 60px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.20 );
+    transition: ease;
+}
+
+.whatsapp__button__img{
+    max-width: 50px;
+    width: 100%;
+    margin-top: 5px;
+    transition: transform 250ms ease;
+}
+.whatsapp__button__img:hover{
+    transform: rotateZ(10deg) scale(1.1);
+}
+
+
 
 
 @media (max-width: 768px){
