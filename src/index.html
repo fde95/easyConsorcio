@@ -5,41 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./styles/main.css">
     <title>EasyConsórcio</title>
 </head>
 <body>
-    <header>
-            <nav class="navbar navbar-expand-lg navbar fixed-top bg-body-tertiary">
-                <div class="container">
-                    <a href="" class="navbar-brand">
-                        <img src="./images/brand-logo-navbar.png" alt="Easy Consórcio Logo">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <a href="#" class="nav-link active" aria-current="page">
-                                Inicio
-                            </a>
-                            <a href="#aboutUs" class="nav-link">
-                                Sobre Nós
-                            </a>
-                            <a href="#consorcios" class="nav-link">
-                                Consórcios
-                            </a>
-                            <a href="#" class="nav-link">
-                                Contatos
-                            </a>
-                        </div>
+    <header  id="header">
+        <nav class="navbar navbar-expand-lg navbar fixed-top bg-body-tertiary nav-underline">
+            <div class="container">
+                <a href="" class="navbar-brand">
+                    <img src="./images/brand-logo-navbar.png" alt="Easy Consórcio Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <a href="#" class="nav-link fw-bolder" aria-current="page">
+                            Inicio
+                        </a>
+                        <a href="#aboutUs" class="nav-link fw-bolder">
+                            Sobre Nós
+                        </a>
+                        <a href="#consorcios" class="nav-link fw-bolder">
+                            Consórcios
+                        </a>
+                        <a href="#" class="nav-link fw-bolder disabled">
+                            Contatos
+                        </a>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
     </header>
+    <div data-bs-spy="scroll" data-bs-target="#header" data-bs-smooth-scroll="true"> 
 
     <div class="hero">
-        <div class="container" data-aos="fade-right">
+        <div class="container" data-aos="fade-right"  data-aos-once="true" data-aos-duration="2500">
             <div class="hero__text">
                 <h2 class="hero__text__title">
                     Transforme seus 
@@ -54,9 +56,9 @@
     </div>
     <section class="servicos">
         <div class="container">
-            <div class="row">
+            <div class="row" data-aos="fade-up" data-aos-once="true" data-aos-duration="3000">
                 
-                <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <figure class="cardProduto">
                         <img src="./images/card_lg_01.png" alt="" class="cardProduto__img"/>
                         <figurecaption class="cardProduto__body"> 
@@ -70,7 +72,7 @@
                 </div>
                 
 
-                <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <figure class="cardProduto">
                         <img src="./images/card_lg_02.png" alt="" class="cardProduto__img"/>
                         <figurecaption class="cardProduto__body"> 
@@ -84,7 +86,7 @@
                 </div>
                 
 
-                <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <figure class="cardProduto">
                         <img src="./images/card_lg_03.png" alt="" class="cardProduto__img"/>
                         <figurecaption class="cardProduto__body"> 
@@ -98,7 +100,7 @@
                 </div>
                 
 
-                <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <figure class="cardProduto">
                         <img src="./images/card_lg_04.png" alt="" class="cardProduto__img"/>
                         <figurecaption class="cardProduto__body"> 
@@ -114,6 +116,7 @@
                 
         </div>
     </section>
+
 
     <section id="aboutUs">
         <div class="container">
@@ -133,20 +136,21 @@
         <div class="info">
             <div class="container">
                 <div class="info__list">
-                    <div class="row text-center info__list__content">
-                        <div data-aos="zoom-out" class="col info__list__item">
+
+                    <div class="row text-center info__list__content" data-aos="zoom-in" data-aos-duration="2000">
+                        <div class="col info__list__item">
                             <h3 class="info__list__item__title">+10</h3>
                             <p class="info__list__item__description">
                                 A mais de 10 anos realizando sonhos.
                             </p>
                         </div>
-                        <div data-aos="zoom-out" class="col info__list__item">
+                        <div class="col info__list__item">
                             <h3 class="info__list__item__title">+20</h3>
                             <p class="info__list__item__description">
                                 Parcerias com administradoras de consórcio
                             </p>
                         </div>
-                        <div data-aos="zoom-out" class="col info__list__item">
+                        <div class="col info__list__item">
                             <h3 class="info__list__item__title">+600</h3>
                             <p class="info__list__item__description">
                                 Parceiros de vendas em todo o Brasil
@@ -154,20 +158,20 @@
                         </div>
                     </div>
                     
-                    <div class="row text-center info__list__content">
-                        <div data-aos="zoom-out" class="col info__list__item">
+                    <div class="row text-center info__list__content" data-aos="zoom-in" data-aos-duration="2000">
+                        <div class="col info__list__item">
                             <h3 class="info__list__item__title">+290 mil</h3>
                             <p class="info__list__item__description">
                                 Clientes Ativos.
                             </p>
                         </div>
-                        <div data-aos="zoom-out" class="col info__list__item">
+                        <div class="col info__list__item">
                             <h3 class="info__list__item__title">+700 mil</h3>
                             <p class="info__list__item__description">
                                 Cotas Contempladas
                             </p>
                         </div>
-                        <div data-aos="zoom-out" class="col info__list__item">
+                        <div class="col info__list__item">
                             <h3 class="info__list__item__title">+2300</h3>
                             <p class="info__list__item__description">
                                 Cotas contempladas por mês.
@@ -202,18 +206,21 @@
                 <div class="consorcios__products text-start">
                     <div class="row consorcios__products__item">
                         <div class="col">
-                            <h4 class="consorcios__products__item__title">
-                                Consórcio de Carros
-                            </h4>
-                            <p class="consorcios__products__item__description">
-                                Facilidade e flexibilidade para conquistar o seu carro novo, seminovo ou usado
-                            </p>
-                            <div class="row consorcios__products__item__btn">
-                                <div class="col consorcios__products__item__btn__primary">
-                                    <a  href="#">Simule seu Consórcio</a>
-                                </div>
-                                <div class="col consorcios__products__item__btn__secundary">
-                                    <a href="">Entenda mais sobre o Consórcio</a>
+                            <div class="container">
+                                <h4 class="consorcios__products__item__title">
+                                    Consórcio de Carros
+                                </h4>
+                                <p class="consorcios__products__item__description">
+                                    Facilidade e flexibilidade para conquistar o seu carro novo, seminovo ou usado
+                                </p>
+                            
+                                <div class="row consorcios__products__item__btn">
+                                    <div class="col consorcios__products__item__btn__primary">
+                                        <a  href="#">Simule seu Consórcio</a>
+                                    </div>
+                                    <div class="col consorcios__products__item__btn__secundary">
+                                        <a href="">Entenda mais sobre o Consórcio</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -226,18 +233,20 @@
                 <div class="consorcios__products--margin text-start">
                     <div class="row consorcios__products__item">
                         <div class="col">
-                            <h4 class="consorcios__products__item__title">
-                                Consórcio de Imóveis
-                            </h4>
-                            <p class="consorcios__products__item__description">
-                                Um lugar pra chamar de seu com planejamento sério, livre de juros e entrada
-                            </p>
-                            <div class="row consorcios__products__item__btn">
-                                <div class="col consorcios__products__item__btn__primary">
-                                    <a  href="#">Simule seu Consórcio</a>
-                                </div>
-                                <div class="col consorcios__products__item__btn__secundary">
-                                    <a href="">Entenda mais sobre o Consórcio</a>
+                            <div class="container">
+                                <h4 class="consorcios__products__item__title">
+                                    Consórcio de Imóveis
+                                </h4>
+                                <p class="consorcios__products__item__description">
+                                    Um lugar pra chamar de seu com planejamento sério, livre de juros e entrada
+                                </p>
+                                <div class="row consorcios__products__item__btn">
+                                    <div class="col consorcios__products__item__btn__primary">
+                                        <a  href="#">Simule seu Consórcio</a>
+                                    </div>
+                                    <div class="col consorcios__products__item__btn__secundary">
+                                        <a href="">Entenda mais sobre o Consórcio</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -250,18 +259,20 @@
                 <div class="consorcios__products--margin text-start">
                     <div class="row consorcios__products__item">
                         <div class="col">
-                            <h4 class="consorcios__products__item__title">
-                                Consórcio de Motocicletas
-                            </h4>
-                            <p class="consorcios__products__item__description">
-                                Planos que se encaixam no seu orçamento para conquistar a moto dos sonhos
-                            </p>
-                            <div class="row consorcios__products__item__btn">
-                                <div class="col consorcios__products__item__btn__primary">
-                                    <a  href="#">Simule seu Consórcio</a>
-                                </div>
-                                <div class="col consorcios__products__item__btn__secundary">
-                                    <a href="">Entenda mais sobre o Consórcio</a>
+                            <div class="container">
+                                <h4 class="consorcios__products__item__title">
+                                    Consórcio de Motocicletas
+                                </h4>
+                                <p class="consorcios__products__item__description">
+                                    Planos que se encaixam no seu orçamento para conquistar a moto dos sonhos
+                                </p>
+                                <div class="row consorcios__products__item__btn">
+                                    <div class="col consorcios__products__item__btn__primary">
+                                        <a  href="#">Simule seu Consórcio</a>
+                                    </div>
+                                    <div class="col consorcios__products__item__btn__secundary">
+                                        <a href="">Entenda mais sobre o Consórcio</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -274,18 +285,20 @@
                 <div class="consorcios__products--margin text-start">
                     <div class="row consorcios__products__item">
                         <div class="col">
-                            <h4 class="consorcios__products__item__title">
-                                Consórcio de Pesados
-                            </h4>
-                            <p class="consorcios__products__item__description">
-                                Amplie o faturamento do seu negócio realizando um Consórcio de Veículos Pesados
-                            </p>
-                            <div class="row consorcios__products__item__btn">
-                                <div class="col consorcios__products__item__btn__primary">
-                                    <a  href="#">Simule seu Consórcio</a>
-                                </div>
-                                <div class="col consorcios__products__item__btn__secundary">
-                                    <a href="">Entenda mais sobre o Consórcio</a>
+                            <div class="container">
+                                <h4 class="consorcios__products__item__title">
+                                    Consórcio de Pesados
+                                </h4>
+                                <p class="consorcios__products__item__description">
+                                    Amplie o faturamento do seu negócio realizando um Consórcio de Veículos Pesados
+                                </p>
+                                <div class="row consorcios__products__item__btn">
+                                    <div class="col consorcios__products__item__btn__primary">
+                                        <a  href="#">Simule seu Consórcio</a>
+                                    </div>
+                                    <div class="col consorcios__products__item__btn__secundary">
+                                        <a href="">Entenda mais sobre o Consórcio</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -298,18 +311,20 @@
                 <div class="consorcios__products--margin text-start">
                     <div class="row consorcios__products__item">
                         <div class="col">
-                            <h4 class="consorcios__products__item__title">
-                                Consórcio de Serviços
-                            </h4>
-                            <p class="consorcios__products__item__description">
-                                Festa de aniversário, casamento, viagem...? A sua experiência incrível está a um clique
-                            </p>
-                            <div class="row consorcios__products__item__btn">
-                                <div class="col consorcios__products__item__btn__primary">
-                                    <a  href="#">Simule seu Consórcio</a>
-                                </div>
-                                <div class="col consorcios__products__item__btn__secundary">
-                                    <a href="">Entenda mais sobre o Consórcio</a>
+                            <div class="container">
+                                <h4 class="consorcios__products__item__title">
+                                    Consórcio de Serviços
+                                </h4>
+                                <p class="consorcios__products__item__description">
+                                    Festa de aniversário, casamento, viagem...? A sua experiência incrível está a um clique
+                                </p>
+                                <div class="row consorcios__products__item__btn">
+                                    <div class="col consorcios__products__item__btn__primary">
+                                        <a  href="#">Simule seu Consórcio</a>
+                                    </div>
+                                    <div class="col consorcios__products__item__btn__secundary">
+                                        <a href="">Entenda mais sobre o Consórcio</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -325,15 +340,64 @@
 
     <div class="whatsapp__button">
         <div class="whatsapp__button__bg">
-            <a href="#">
+            <a href="https://linktr.ee/fde95" target="_blank">
                 <img src="./images/whatsapp.svg" class="whatsapp__button__img" alt="">
             </a>
         </div>
     </div>
 
+    <footer>
+        <div class="container">
+            <div class="row brand">
+                <div class="col text-center">
+                    <a href="#" class="brand__image">
+                        <img src="./images/brand-logo-navbar-bw.png" alt="">
+                    </a>
+                    <p class="brand__description">
+                        Seu caminho seguro para realizar seus sonhos!
+                    </p>
+                    <div class="row informations__socialmedia">
+                        <div class="col-md-4 col-sm-12 brand__informations">
+                                <b>EMPRESA FICTÍCIA</b>
+                                <br>
+                                EasyConsórcio Administradora de Consórcio LTDA
+                                <br>
+                                CNPJ: 00.000.000/0000-00
+                        </div>
+                        <div class="col-1 social__media">
+                            <a href="https://linktr.ee/fde95" target="_blank">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="col-1 social__media">
+                            <a href="https://linktr.ee/fde95" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="col-1 social__media">
+                            <a href="https://linktr.ee/fde95" target="_blank">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="col-1 social__media">
+                            <a href="https://linktr.ee/fde95" target="_blank">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <p class="text-center copy">
+                2023 &copy; Criado e Desenvolvido por <a href="https://www.linkedin.com/in/fde95/" target="_blank">Felipe Espinoza</a>
+            </p>
+        </div>
+    </footer>
+    </div>
+
     <script src="../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
