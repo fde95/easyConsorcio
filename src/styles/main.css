@@ -195,7 +195,7 @@
     text-align: center;
     align-items: center;
 }
-.consorcios__products__item__btn__primary a{
+.consorcios__products__item__btn__primary__link{
     text-decoration: none;
     color: #fff;
 }
@@ -209,7 +209,7 @@
 .consorcios__products__item__btn__primary:hover{
     background-color: #006c70;
 }
-.consorcios__products__item__btn__secundary a{
+.consorcios__products__item__btn__secundary__link{
     text-decoration: none;
     color: #009197;
     
@@ -542,6 +542,7 @@ footer{
     }
     .consorcios__products__item__btn__primary{
         margin-bottom: 20px;
+        margin-right: 0;
     }
     .consorcios__products__item__img{
         justify-content: center;
