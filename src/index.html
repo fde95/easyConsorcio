@@ -66,7 +66,7 @@
                                 <h2 class="cardProduto__title"> Consórcio</h2>
                                 <p class="cardProduto__desciption">Residêncial</p>
                             </div>
-                            <a href="#" class="cardProduto__button">Simular</a>
+                            <a href="#" class="cardProduto__button" data-bs-toggle="modal" data-bs-target="#modalId">Simular</a>
                         </figurecaption>
                     </figure>
                 </div>
@@ -80,7 +80,7 @@
                                 <h2 class="cardProduto__title"> Consórcio</h2>
                                 <p class="cardProduto__desciption">Automotivo</p>
                             </div>
-                            <a href="#" class="cardProduto__button">Simular</a>
+                            <a href="#" class="cardProduto__button" data-bs-toggle="modal" data-bs-target="#modalId">Simular</a>
                         </figurecaption>
                     </figure>
                 </div>
@@ -94,7 +94,7 @@
                                 <h2 class="cardProduto__title"> Consórcio</h2>
                                 <p class="cardProduto__desciption">Investimento</p>
                             </div>
-                            <a href="#" class="cardProduto__button">Simular</a>
+                            <a href="#" class="cardProduto__button" data-bs-toggle="modal" data-bs-target="#modalId">Simular</a>
                         </figurecaption>
                     </figure>
                 </div>
@@ -108,7 +108,7 @@
                                 <h2 class="cardProduto__title"> Consórcio</h2>
                                 <p class="cardProduto__desciption">Viagem</p>
                             </div>
-                            <a href="#" class="cardProduto__button">Simular</a>
+                            <a href="#" class="cardProduto__button" data-bs-toggle="modal" data-bs-target="#modalId">Simular</a>
                         </figurecaption>
                     </figure>
                 </div>
@@ -192,7 +192,7 @@
             <p class="subscription__description">
                 EasyConsórcio, seu caminho seguro para realizar seus sonhos!
             </p>
-            <a href="" class="btn btn-success fw-bold">Simule seu consórcio</a>
+            <a href="" class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#modalId">Simule seu consórcio</a>
         </div>
     </section>
 
@@ -216,7 +216,7 @@
                             
                                 <div class="row consorcios__products__item__btn">
                                     <div class="col consorcios__products__item__btn__primary">
-                                        <a  href="#">Simule seu Consórcio</a>
+                                        <a  href="#" data-bs-toggle="modal" data-bs-target="#modalId">Simule seu Consórcio</a>
                                     </div>
                                     <div class="col consorcios__products__item__btn__secundary">
                                         <a href="">Entenda mais sobre o Consórcio</a>
@@ -242,7 +242,7 @@
                                 </p>
                                 <div class="row consorcios__products__item__btn">
                                     <div class="col consorcios__products__item__btn__primary">
-                                        <a  href="#">Simule seu Consórcio</a>
+                                        <a  href="#" data-bs-toggle="modal" data-bs-target="#modalId">Simule seu Consórcio</a>
                                     </div>
                                     <div class="col consorcios__products__item__btn__secundary">
                                         <a href="">Entenda mais sobre o Consórcio</a>
@@ -268,7 +268,7 @@
                                 </p>
                                 <div class="row consorcios__products__item__btn">
                                     <div class="col consorcios__products__item__btn__primary">
-                                        <a  href="#">Simule seu Consórcio</a>
+                                        <a  href="#" data-bs-toggle="modal" data-bs-target="#modalId">Simule seu Consórcio</a>
                                     </div>
                                     <div class="col consorcios__products__item__btn__secundary">
                                         <a href="">Entenda mais sobre o Consórcio</a>
@@ -294,7 +294,7 @@
                                 </p>
                                 <div class="row consorcios__products__item__btn">
                                     <div class="col consorcios__products__item__btn__primary">
-                                        <a  href="#">Simule seu Consórcio</a>
+                                        <a  href="#" data-bs-toggle="modal" data-bs-target="#modalId">Simule seu Consórcio</a>
                                     </div>
                                     <div class="col consorcios__products__item__btn__secundary">
                                         <a href="">Entenda mais sobre o Consórcio</a>
@@ -320,7 +320,7 @@
                                 </p>
                                 <div class="row consorcios__products__item__btn">
                                     <div class="col consorcios__products__item__btn__primary">
-                                        <a  href="#">Simule seu Consórcio</a>
+                                        <a  href="#" data-bs-toggle="modal" data-bs-target="#modalId">Simule seu Consórcio</a>
                                     </div>
                                     <div class="col consorcios__products__item__btn__secundary">
                                         <a href="">Entenda mais sobre o Consórcio</a>
@@ -394,7 +394,8 @@
                             End: Rua do Sucesso, 1398
                         </p>
                     </a>
-
+                    <!-- Mini Mapa -->
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=california&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co">2yu</a><br><style>.mapouter{position:relative;text-align:right;height:300px;width:500px;}</style><a href="https://embedgooglemap.2yu.co">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:500px;}</style></div></div>
                 </div>
                 
             </div>
@@ -404,6 +405,35 @@
             <img class="contact__img__content" src="./images/contactWoman.png" alt="">
         </div>
     </section>
+
+
+    
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Body
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Optional: Place to the bottom of scripts -->
+    <script>
+        const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+    
+    </script>
 
     <footer>
         <div class="container">

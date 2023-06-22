@@ -298,11 +298,10 @@
     color: #a3a3a3;
 }
 .contact__info__description p{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .contact__info__description__icon{
     color: #009197;
-    background-color: #ddd;
     padding: 8px;
     border-radius: 10px;
     margin-right: 15px;
