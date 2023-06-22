@@ -254,6 +254,66 @@
 }
 
 
+#contact{
+    padding-top: 100px;
+}
+.contact__title{
+    font-size: 2em;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #009197;
+}
+.contact__title--secundary{
+    font-weight: bolder;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+.contact__form{
+    color: #a3a3a3;
+    font-weight: bold;
+}
+.contact__form select{
+    color: #a3a3a3;
+}
+.contact__form textarea{
+    resize: none;
+    height: 150px;
+}
+.form__btn{
+    background-color: #009197;
+    color: #fff;
+    font-weight: bold;
+}
+.form__btn:hover{
+    background-color: #006c70;
+    color: #fff;
+}
+.contact__info{
+    font-size: 1.3em;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.contact__info__description{
+    text-decoration: none;
+    color: #a3a3a3;
+}
+.contact__info__description p{
+    margin-bottom: 40px;
+}
+.contact__info__description__icon{
+    color: #009197;
+    background-color: #ddd;
+    padding: 8px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.contact__img{
+    text-align: end;
+    width: 100%;
+    margin-top: -500px;
+}
+
+
 footer{
     background-color: #009197;
     padding: 20px 0;
