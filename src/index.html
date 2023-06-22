@@ -33,6 +33,9 @@
                         <a href="#contact" class="nav-link fw-bolder">
                             Contatos
                         </a>
+                        <a class="fw-bolder btn btn-simular" data-bs-toggle="modal" data-bs-target="#modalId">
+                            Simular Consórcio
+                        </a>
                     </div>
                 </div>
             </div>
@@ -192,7 +195,7 @@
             <p class="subscription__description">
                 EasyConsórcio, seu caminho seguro para realizar seus sonhos!
             </p>
-            <a href="" class="btn btn-success fw-bold" data-bs-toggle="modal" data-bs-target="#modalId">Simule seu consórcio</a>
+            <a href="" class="btn btn-simular fw-bold" data-bs-toggle="modal" data-bs-target="#modalId">Simule seu consórcio</a>
         </div>
     </section>
 
@@ -413,30 +416,66 @@
     <!-- Modal Body -->
     <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
     <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                    <h5 class="modal-title" id="modalTitleId">
+                        Simular Consórcio
+                    </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Body
+                    <p>De o primeiro passo em direção aos seus sonhos!</p>
+                    <form class="contact__form">
+                        <label for="name" class="form-label">Nome Completo</label>
+                        <input type="text" name="name" id="name" class="form-control">
+                        <label for="data" class="form-label pt-3">Data de Nascimento</label>
+                        <input type="date" name="data" id="data" class="form-control">
+                        <label for="cpf" class="form-label pt-3">CPF</label>
+                        <input type="number" name="cpf" id="cpf" class="form-control">
+                        <label for="email" class="form-label pt-3">E-mail</label>
+                        <input type="email" name="email" id="email" class="form-control">
+                        <label for="cel" class="form-label pt-3">Celular</label>
+                        <input type="tel" name="cel" id="cel" class="form-control">
+                        <label for="consorcio__select" class="form-label pt-3">Tipo de Consórcio</label>
+                        <select name="consorcio__select" id="consorcio__select" class="form-select">
+                            <option value="Carro">Consórcio de Carro</option>
+                            <option value="Carro">Consórcio de Imobiliário</option>
+                            <option value="Carro">Consórcio de Motocicleta</option>
+                            <option value="Carro">Consórcio de Pesado</option>
+                            <option value="Carro">Consórcio de Serviço</option>
+                        </select>
+                        <label for="valorEmprestimo" class="form-label pt-3">Valor</label>
+                        <input type="number" name="valorEmprestimo" id="valorEmprestimo" class="form-control" placeholder="Valor mínimo de R$1.000,00">
+                        <label for="consorcio__select" class="form-label pt-3">Quantidade de parcelas</label>
+                        <select name="consorcio__select" id="consorcio__select" class="form-select">
+                            <option value="Carro">24</option>
+                            <option value="Carro">48</option>
+                            <option value="Carro">60</option>
+                            <option value="Carro">120</option>
+                            <option value="Carro">160</option>
+                        </select>
+                        <button type="submit" class="btn-outline-success btn mt-4 fw-bold">Simular</button>
+                        <span>
+                            <h2 class="text-center mt-5">
+                                24 parcelas de R$46,67/mês
+                            </h2>
+                            <p class="text-end">Valor total: R$1.120,00</p>
+                            <p class="text-end">
+                                Taxa adm 12%
+                            </p>
+                        </span>
+                    </form>
+                    
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-simular">Entrar em Contato</button>
                 </div>
             </div>
         </div>
     </div>
     
     
-    <!-- Optional: Place to the bottom of scripts -->
-    <script>
-        const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
-    
-    </script>
-
     <footer>
         <div class="container">
             <div class="row brand">
