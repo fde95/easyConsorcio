@@ -430,6 +430,36 @@ footer{
         margin: 0 20px;
     }
 
+    .contact__title{
+        font-size: 1.3em;
+    }
+    .contact__form{
+        width: 100%;
+    }
+
+    .contact__img{
+        display: none;
+    }
+    .mapouter{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contact__line{
+        display: block;
+    }
+    .contact__title--secundary{
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .form__btn{
+        margin-bottom: 40px;
+    }
+    .contact__info{
+        margin: 0;
+    }
+    .contact__info__description{
+        font-size: .8em;
+    }
 
     footer{
         padding-bottom: 80px;
@@ -504,6 +534,38 @@ footer{
         margin-top: 20px;
         border-radius: 0 0 10px 10px;
     }
+
+    .contact__title{
+        font-size: 1.3em;
+    }
+    .contact__form{
+        width: 100%;
+    }
+
+    .contact__img{
+        display: none;
+    }
+    .mapouter{
+        margin-bottom: 20px;
+    }
+    #contact .row{
+        display: block;
+    }
+    .contact__title--secundary{
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .form__btn{
+        margin-bottom: 40px;
+    }
+    .contact__info{
+        margin: 0;
+        text-align: center;
+    }
+    .contact__info__description{
+        font-size: .8em;
+    }
+
 
     .brand__informations{
         margin-right: 30px;
