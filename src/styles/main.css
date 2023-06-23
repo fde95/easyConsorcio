@@ -417,11 +417,21 @@ footer{
         font-size: 14px;
     }
 
+    .consorcios__content__title{
+        font-size: 1.8em;
+    }
     .consorcios__products__item >.col{
         padding: 0;
     }
     .consorcios__products__item{
         display: block;
+    }
+    .consorcios__products__item__title{
+        font-size: 1.4em;
+        margin-bottom: 16px;
+    }
+    .consorcios__products__item__description{
+        font-size: 1.1em;
     }
     .consorcios__products__item__btn{
         display: block;
@@ -429,6 +439,11 @@ footer{
         width: 100%;
     }
     .consorcios__products__item__btn__primary{
+        margin-bottom: 10px;
+        margin-top: 32px;
+        margin-right: 0;
+    }
+    .consorcios__products__item__btn__secundary{
         margin-bottom: 20px;
     }
     .consorcios__products__item__img{

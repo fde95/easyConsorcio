@@ -400,11 +400,11 @@
                 <div class="col">
                     <form class="contact__form">
                         <label for="name" class="form-label">Nome Completo</label>
-                        <input type="text" name="name" id="name" class="form-control">
+                        <input type="text" name="name" id="name" class="form-control" required>
                         <label for="email" class="form-label pt-3">E-mail</label>
-                        <input type="email" name="email" id="email" class="form-control">
+                        <input type="email" name="email" id="email" class="form-control" required>
                         <label for="cel" class="form-label pt-3">Celular</label>
-                        <input type="tel" name="cel" id="cel" class="form-control">
+                        <input type="tel" name="cel" id="cel" class="form-control" required>
                         <label for="consorcio__select" class="form-label pt-3">Tipo de Consórcio</label>
                         <select name="consorcio__select" id="consorcio__select" class="form-select">
                             <option value="Carro">Consórcio de Carro</option>
@@ -414,8 +414,8 @@
                             <option value="Carro">Consórcio de Serviço</option>
                         </select>
                         <label for="mensagem" class="form-label pt-3">Mensagem</label>
-                        <textarea name="mensagem" id="mensagem" class="form-control"></textarea>
-                        <button type="submit" class="form__btn btn mt-4 w-100">Enviar</button>
+                        <textarea name="mensagem" id="mensagem" class="form-control" required></textarea>
+                        <button type="submit" class="form__btn btn mt-4 w-100 contact__form__button">Enviar</button>
                     </form>
                 </div>
                 <div class="col contact__info">
@@ -453,8 +453,7 @@
 
 
     
-    <!-- Modal Body -->
-    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <!-- Modal -->
     <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -466,51 +465,56 @@
                 </div>
                 <div class="modal-body">
                     <p>De o primeiro passo em direção aos seus sonhos!</p>
-                    <form class="contact__form">
+                    <form class="contact__form" id="simuladorForm">
                         <label for="name" class="form-label">Nome Completo</label>
-                        <input type="text" name="name" id="name" class="form-control">
+                        <input type="text" name="name" id="name" class="form-control" required>
+                
                         <label for="data" class="form-label pt-3">Data de Nascimento</label>
-                        <input type="date" name="data" id="data" class="form-control">
+                        <input type="date" name="data" id="data" class="form-control" required>
+                
                         <label for="cpf" class="form-label pt-3">CPF</label>
-                        <input type="number" name="cpf" id="cpf" class="form-control">
+                        <input type="text" name="cpf" id="cpf" class="form-control" required>
+                
                         <label for="email" class="form-label pt-3">E-mail</label>
                         <input type="email" name="email" id="email" class="form-control">
+                
                         <label for="cel" class="form-label pt-3">Celular</label>
-                        <input type="tel" name="cel" id="cel" class="form-control">
+                        <input type="text" name="cel" id="tel" class="form-control" required>
+                
                         <label for="consorcio__select" class="form-label pt-3">Tipo de Consórcio</label>
-                        <select name="consorcio__select" id="consorcio__select" class="form-select">
+                        <select name="consorcio__select" id="SimuladoConsorcio" class="form-select">
                             <option value="Carro">Consórcio de Carro</option>
-                            <option value="Carro">Consórcio de Imobiliário</option>
-                            <option value="Carro">Consórcio de Motocicleta</option>
-                            <option value="Carro">Consórcio de Pesado</option>
-                            <option value="Carro">Consórcio de Serviço</option>
+                            <option value="Imobiliario">Consórcio Imobiliário</option>
+                            <option value="Motocicleta">Consórcio de Motocicleta</option>
+                            <option value="Pesado">Consórcio de Pesado</option>
+                            <option value="Servico">Consórcio de Serviço</option>
                         </select>
+                
                         <label for="valorEmprestimo" class="form-label pt-3">Valor</label>
-                        <input type="number" name="valorEmprestimo" id="valorEmprestimo" class="form-control">
-                        <span class="fw-normal">Valor mínimo: R$1.000,00</span>
+                        <input type="text" name="valorEmprestimo" id="valorEmprestimo" class="form-control" required>
+                        <span class="fw-normal" id="valorMinimoPorModalidade"></span>
                         <br>
-                        <label for="consorcio__select" class="form-label pt-3">Quantidade de parcelas</label>
-                        <select name="consorcio__select" id="consorcio__select" class="form-select">
-                            <option value="Carro">24</option>
-                            <option value="Carro">48</option>
-                            <option value="Carro">60</option>
-                            <option value="Carro">120</option>
-                            <option value="Carro">160</option>
+                
+                        <label for="quantidadeDeParcelas" class="form-label pt-3">Quantidade de parcelas</label>
+                        <select name="quantidadeDeParcelas" class="form-select" id="quantidadeDeParcelas">
                         </select>
-                        <button type="submit" class="btn-outline-success btn mt-4 fw-bold">Simular</button>
-                            <h2 class="text-end mt-5">
-                                24 parcelas de R$<span>46,67</span>/mês
-                            </h2>
-                            <p class="text-end">Valor total: R$<span>1.120,00</span></p>
-                            
-                            <p class="text-end fw-normal">
-                                Taxa adm 12%
-                            </p>
+                
+                        <button type="submit" class="btn-outline-success btn mt-4 fw-bold" id="simulador__form__button">Simular</button>
+                        <h2 class="text-end mt-5 fw-bold">
+                            <span id="quantidadeDeParcelasSelecionadas"></span> de R$<span id="valorPorParcela"></span>/mês
+                        </h2>
+                        <p class="text-end">Valor total: R$<span id="valorTotal"></span></p>
+                
+                        <p class="text-end fw-normal">
+                            Taxa adm 12%
+                        </p>
                     </form>
                     
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-simular">Entrar em Contato</button>
+                    <a href="https://linktr.ee/fde95" target="_blank">
+                        <button type="button" class="btn btn-simular">Entrar em Contato</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -569,6 +573,8 @@
     <script src="../node_modules/jquery/dist/jquery.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./scripts/lib/jquery.mask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>

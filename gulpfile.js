@@ -53,6 +53,7 @@ function scripts (){
         .src([
         './node_modules/jquery/dist/jquery.js',
         './node_modules/bootstrap/dist/js/bootstrap.js',
+        './src/scripts/lib/*js',
         './src/scripts/*.js'
         ])
         .pipe(concat('scripts.js'))
