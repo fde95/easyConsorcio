@@ -59,7 +59,8 @@
    Pré-visualização
   </h2>
   
-  https://github.com/fde95/easyConsorcio/assets/123211425/6d3bac78-e4aa-468a-8ed8-e35367ead0d7
+
+https://github.com/fde95/easyConsorcio/assets/123211425/8e685dc1-9d1d-4b8f-b92f-b429d10b4592
 
 
 
