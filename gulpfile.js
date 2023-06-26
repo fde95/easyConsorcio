@@ -1,17 +1,10 @@
 const gulp = require("gulp"); //Inicialização Gulp
-
-// const sass = require("gulp-sass")(require("sass")); //Minificação e Compilação SASS
-
 const htmlmin = require('gulp-htmlmin'); //Minificação HTML
-
 const concat = require('gulp-concat'); //Concatenador CSS e JS
-
 const cssMin = require('gulp-cssmin'); //Minificador CSS
-
 const rename = require('gulp-rename'); //Renomeador CSS e JS
-
-const uglify = require("gulp-uglify"); //Minificador JS
-
+const uglify = require('gulp-uglify'); //Minificador JS
+const babel = require('gulp-babel'); //Babel
 const imagemin = require("gulp-imagemin"); //Minificador de Imagens
 
 /*Minificação HTML*/
@@ -53,9 +46,13 @@ function scripts (){
         .src([
         './node_modules/jquery/dist/jquery.js',
         './node_modules/bootstrap/dist/js/bootstrap.js',
-        './src/scripts/lib/*js',
+        './vendor/mask/jquery.mask.js',
         './src/scripts/*.js'
         ])
+        .pipe(babel({
+            comments:true,
+            presets: ['@babel/env']
+        }))
         .pipe(concat('scripts.js'))
         .pipe(uglify())
         .pipe(rename({ suffix: '.min'}))

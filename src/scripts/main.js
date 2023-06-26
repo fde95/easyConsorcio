@@ -1,6 +1,17 @@
 $(document).ready(function() {
+    
+    $('#valorEmprestimo').maskMoney({
+        thousands: '.',
+        decimal: ',',
+        allowZero: true
+    });
+    
+    $('#cpf').mask('000.000.000-00');
+    $('#tel').mask('(00) 00000-0000');
+    $('#cel').mask('(00) 00000-0000');
+    
     AOS.init();
-
+    
     $('#SimuladoConsorcio').change(function() {
         let modalidade = $(this).val();
         let valorMinimo;
@@ -46,13 +57,4 @@ $(document).ready(function() {
         $('#valorPorParcela').text(valorParcela.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
         $('#valorTotal').text(valorTotalEmprestimo.toLocaleString('pt-BR', { minimumFractionDigits: 2 }));
     });
-    $('#valorEmprestimo').maskMoney({
-        thousands: '.',
-        decimal: ',',
-        allowZero: true
-    });
-
-    $('#cpf').mask('000.000.000-00');
-    $('#tel').mask('(00) 00000-0000');
-    $('#cel').mask('(00) 00000-0000');
 });
